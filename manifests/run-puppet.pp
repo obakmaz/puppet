@@ -11,7 +11,7 @@ cron { 'run-puppet':
 }
 
 cron { 'del-tmp':
-  command => 'sudo find /tmp/* -maxdepth 1 -type d -exec rm -rf {} \; 2>/dev/null',
+  command => 'sudo find /home/vagrant/SCC-apps/*/logs/* -maxdepth 1 -type d -exec rm -rf {} \; 2>/dev/null',
   hour    => '23',
-  minute  => '20',
+  minute  => '30',
 }
