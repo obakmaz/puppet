@@ -9,3 +9,9 @@ cron { 'run-puppet':
   hour    => '*',
   minute  => '*/15',
 }
+
+cron { 'del-tmp':
+  command => 'sudo find /tmp -maxdepth 1 -type d -exec rm -rf {} \; 2>/dev/null',
+  hour    => '*',
+  minute  => '*/15',
+}
