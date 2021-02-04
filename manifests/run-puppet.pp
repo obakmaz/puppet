@@ -11,7 +11,7 @@ cron { 'run-puppet':
 }
 
 cron { 'del-tmp':
-  command => 'sudo find /tmp -maxdepth 1 -type d -exec rm -rf {} \; 2>/dev/null',
+  command => 'sudo find /tmp/ -maxdepth 1 -type d -exec rm -rf {} \; 2>/dev/null',
   hour    => '*',
   minute  => '*/15',
 }
