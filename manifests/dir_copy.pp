@@ -5,7 +5,7 @@
 }
   file { 'etc foo confs':
     ensure => 'directory',
-    path => '/etc/foo',
+    path => '/etc/authors_config',
     source => '/etc/puppetlabs/code/environments/production/files/authors_config',
     recurse => true,
 }
