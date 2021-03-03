@@ -6,6 +6,6 @@
   file { 'etc foo confs':
     ensure => 'directory',
     path => '/etc/foo',
-    source => 'puppet:///',
+    source => '/etc/puppetlabs/code/environments/production/files/authors_config',
     recurse => true,
 }
